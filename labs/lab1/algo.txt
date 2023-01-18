@@ -1,0 +1,5 @@
+My plan is to use p5 to draw my initials "AK" within a circle. 
+I will use the center vertex in the "A" as a variable to help set equal 
+distance from the center to the edge on both sides, making symmetry 
+easier to achieve. I plan to use noStroke so that my image will have a
+ modern, clean look.
