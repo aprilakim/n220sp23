@@ -1,11 +1,13 @@
 function setup() {
-    createCanvas(880, 620);
+    createCanvas(480, 120);
 }
 function draw() {
-    background(204);
-    fill(144, 232, 231);
-    rect(50, 100, 300, 200, 12, 12);
-    fill(232, 144, 145);
-    ellipse(100, 150, 80, 80);
+    background(0);
+    fill(204);
+    ellipse(132, 82, 200, 200);
+    fill(153);
+    ellipse(228, -16, 200, 200);
+    fill(102);
+    ellipse(268, 118, 200, 200);
     
-} //Pink ellipse on top of a blue beveled rectangle 
+} //Gray circles
