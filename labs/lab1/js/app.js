@@ -47,6 +47,6 @@ function draw() {
 
     fill(255, 204, 224);        //letter "A" center triangle
     triangle(400, 165, 350, 250, 450, 250);
-    //ellipse(400, 175, 5, 5);
+   
 
 }
