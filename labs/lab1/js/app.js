@@ -5,14 +5,17 @@
 var radius = 420;
 var a = 25;
 var head = 150;
+var whiskerX = 400;
+var whiskerY = 355;
 
 function setup() {
     createCanvas(800,600);
     background(255, 204, 224); //light pink background
-    noStroke();                //no lines visible on any shape
+    //noStroke();                //no lines visible on any shape
 }
 function draw() {
     //fill(255, 255, 179);        //light yellow
+    noStroke();
     fill(0);                               // black cat (for now)
     ellipse(400, 300, radius*1.5, radius);  //cat ellipse face
     fill(255);
@@ -29,9 +32,15 @@ function draw() {
     fill(255, 204, 224);
     triangle(400, 385, 350, 325, 450, 325);   //nose
 
-    fill(255);
-    strokeWeight(3);
-    line(350, 350, 375, 325);
+    stroke(255);                            //white whiskers
+    strokeWeight(4);
+    //ellipse(400, 355, 4, 4);              //setting a point for whiskers
+    line(whiskerX, whiskerY, 300, 335);     //left top whisker
+    line(whiskerX, whiskerY, 300, 370);     //left middle whisker
+    line(whiskerX, whiskerY, 300, 400);     //left bottom whisker
+    line(whiskerX, whiskerY, 500, 340);     //right top 
+    line(whiskerX, whiskerY, 500, 370);     //right middle
+    line(whiskerX, whiskerY, 500, 400);     //right bottom whisker
     
     //fill(100);
     //ellipse(400, 300, radius/4, radius/4);
