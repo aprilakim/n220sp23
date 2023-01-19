@@ -1,13 +1,15 @@
+var x = 25;
+var h = 20;
+var y = 25;
+
 function setup() {
     createCanvas(480, 120);
 }
 function draw() {
-    background(0);
-    fill(204, 0, 0, 100);
-    ellipse(132, 82, 200, 200);
-    fill(153);
-    ellipse(228, -16, 200, 200);
-    fill(102);
-    ellipse(268, 118, 200, 200);
+    background(204);
+    x = 20;
+    rect(x, y, 300, h);
+    x = x + 100;
+    rect(x, y+h, 300, h);
     
 } //Gray circles
