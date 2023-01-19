@@ -1,5 +1,6 @@
-My plan is to use p5 to draw my initials "AK" within a circle. 
-I will use the center vertex in the "A" as a variable to help set equal 
-distance from the center to the edge on both sides, making symmetry 
-easier to achieve. I plan to use noStroke so that my image will have a
- modern, clean look.
+My plan is to use p5 to draw a cat. I will use variables to craete the radius 
+so that the eyes are easier to create. I will also use a variable to set the 
+lenth of the ears.These changes will ensure things stay proportionate even with editing.
+I will use an oval face, a circle within a circle for each eye. Weighted strokes for the 
+whiskers. Traingle for the ears.
+
