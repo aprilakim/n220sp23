@@ -1,4 +1,5 @@
 let xPos = 0;
+let yPos = 10;
 
 function setup(){
     createCanvas(400, 300);
@@ -6,6 +7,9 @@ function setup(){
 
 function draw(){
     background(0);
-    xPos++;                 //animate the circle
-    circle(xPos, 200, 30);
+    xPos++; 
+    yPos++;             //animate the circle
+    fill(255, 102, 179);           
+    circle(xPos, yPos, 30);
 }
+
