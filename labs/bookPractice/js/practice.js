@@ -1,15 +1,11 @@
-var x = 25;
-var h = 20;
-var y = 25;
+let xPos = 0;
 
-function setup() {
-    createCanvas(480, 120);
+function setup(){
+    createCanvas(400, 300);
 }
-function draw() {
-    background(204);
-    x = 20;
-    rect(x, y, 300, h);
-    x = x + 100;
-    rect(x, y+h, 300, h);
-    
-} //Gray circles
+
+function draw(){
+    background(0);
+    xPos++;                 //animate the circle
+    circle(xPos, 200, 30);
+}
