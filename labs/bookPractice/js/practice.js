@@ -1,14 +1,13 @@
+//var x = 280;
+//var y = -100;
+//var diameter = 380;
+
 function setup() {
     createCanvas(480, 120);
-    fill(255);
-    stroke(102);
+    fill(0, 102);           //semi transparent
+    noStroke();
+   
 }
 function draw() {
-    background (179, 255, 217);
-    for (var y = 20; y <= height-20; y += 10){
-        for (var x = 20; x <= width-20; x += 10) {
-            ellipse(x, y, 4, 4);
-            line(x,y,240,60);
-        }
-    }
+    ellipse(mouseX, mouseY, 9, 9); //dots that follow the mouse
 }
