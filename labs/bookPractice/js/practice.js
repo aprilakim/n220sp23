@@ -9,5 +9,6 @@ function setup() {
    
 }
 function draw() {
+    background(204);                //background here updates each frame so that only most recent dot appears.
     ellipse(mouseX, mouseY, 9, 9); //dots that follow the mouse
 }
