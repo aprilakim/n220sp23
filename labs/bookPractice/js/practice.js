@@ -1,15 +1,10 @@
-let xPos = 0;
-let yPos = 10;
-
-function setup(){
-    createCanvas(400, 300);
+function setup() {
+    createCanvas(480, 120);
+    strokeWeight(2);
 }
-
-function draw(){
-    background(0);
-    xPos++; 
-    yPos++;             //animate the circle
-    fill(255, 102, 179);           
-    circle(xPos, yPos, 30);
+function draw() {
+    background (204);
+    for (var i = 20; i < 400; i += 8) {
+        line(i, 40, i+60, 80);
+    }
 }
-
