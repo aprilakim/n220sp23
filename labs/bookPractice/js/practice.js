@@ -3,12 +3,15 @@
 //var diameter = 380;
 
 function setup() {
-    createCanvas(480, 120);
-    fill(0, 102);           //semi transparent
-    noStroke();
+    createCanvas(240, 120);
+    strokeWeight(12);
    
 }
 function draw() {
-    background(204);                //background here updates each frame so that only most recent dot appears.
-    ellipse(mouseX, mouseY, 9, 9); //dots that follow the mouse
+    background(204);                
+    stroke(255);
+    line(120, 60, mouseX, mouseY);
+    stroke(0);
+    var mx = map(mouseX, 0, width, 60, 180); //map 
+    line(120, 60, mx, mouseY);
 }
