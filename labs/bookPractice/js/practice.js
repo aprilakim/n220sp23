@@ -1,10 +1,14 @@
 function setup() {
     createCanvas(480, 120);
-    strokeWeight(2);
+    fill(255);
+    stroke(102);
 }
 function draw() {
-    background (204);
-    for (var i = 20; i < 400; i += 8) {
-        line(i, 40, i+60, 80);
+    background (179, 255, 217);
+    for (var y = 20; y <= height-20; y += 10){
+        for (var x = 20; x <= width-20; x += 10) {
+            ellipse(x, y, 4, 4);
+            line(x,y,240,60);
+        }
     }
 }
