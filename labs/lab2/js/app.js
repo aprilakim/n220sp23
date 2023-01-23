@@ -6,21 +6,22 @@ Class 23523
 //let yPos = 10;
 
 var radius = 40;
-var x = -radius;
+var x = 110;
 var speed = 0.5;
+var direction = 1;
 
 function setup() {
     createCanvas(240, 120);
-    ellipseMode(RADIUS);
 }
 
 function draw() {
-    background(0);
-    x += speed;         //increase the value of x
-    if (x > width+radius){
-        x = -radius;
-    }
-    arc(x, 60, radius, radius, 0.52, 5.76);
+   background(204);
+   for (var x = 20; x < width; x+=20) {
+    var mx = mouseX / 10;
+    var offsetA = random(-mx, mx);
+    var offsetB = random(-mx,mx);
+    line(x + offsetA, 20, x- offsetB, 100);
+   }
 }
 
 /*
