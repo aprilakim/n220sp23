@@ -11,7 +11,7 @@ function setup() {
 
 
 function draw(){
-    var fr = frameRate(5);
+    var fr = frameRate(100);
     //print(fr);
     background(0);
     xPos++; 

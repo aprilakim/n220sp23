@@ -9,7 +9,7 @@ Class 23523
  * move ball to left edge with -radius. 
  */
 
-var radius = 60;                //set radius of ball
+var radius = 60;                 //set radius of ball
 var x = -radius;
 var fr = 5;
 
