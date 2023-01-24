@@ -9,5 +9,6 @@ Or else, make red.
 */
 
 function setup() {
-    createCanvas(400, 300); 
+    createCanvas(400, 300);         //keep Canvas set at 400*300
+    background(104);
 }
