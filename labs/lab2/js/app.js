@@ -2,14 +2,14 @@
 22 January 2023
 Class 23523
 */ 
-let xPos = 0;
-let yPos = 10;
+//let xPos = 0;
+//let yPos = 10;
 
-function setup() {
-    createCanvas (400, 300);
-}
+//function setup() {
+//    createCanvas (400, 300);
+//}
 
-
+/*
 function draw(){
     var fr = frameRate(100);
     //print(fr);
@@ -19,4 +19,4 @@ function draw(){
     fill(255, 102, 179);           
     circle(xPos, yPos, 30);
 }
-
+*/
