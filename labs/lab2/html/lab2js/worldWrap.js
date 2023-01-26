@@ -3,20 +3,25 @@
 Class 23523
 */
 
-/**Algorithm: 
- * Use frame Count function with parameter set at 5 pixels per frame. 
- * If x is greater than the width of the screen plus the radius of ball, 
- * move ball to left edge with -radius. 
- */
 
-
+var radius = 80;
+var x = -radius;
+var speed = 2;
 
 function setup() {
-    createCanvas(800, 600);     //keep set at 800*600
+    createCanvas(800, 600);               //keep set at 800*600
+    ellipseMode(RADIUS);       
+    noStroke(); 
 
 }
 
 function draw () {
-    
-   
+    background(0, 51, 17);
+   // background(0, 26, 51);               //set background here to refresh frame continuously
+    x += speed;                          //increase speed
+    if (x > width+radius) {              //if poistion of ball exceeds screen width and width of ball then reset position
+        x =-radius;
+    }
+    ellipse(x, 300, radius, radius);     //ball
+    fill(255, 173, 51);                 //light blue
 }
