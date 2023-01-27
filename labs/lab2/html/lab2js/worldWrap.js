@@ -15,9 +15,9 @@ function setup() {
 }
 
 function draw () {
-    background(0, 51, 17);                  //set background here to refresh frame continuously
+    background(0, 51, 17);                  //set background here to refresh frame continuously/ green
 
-    for (var i = 0; i < 800; i += 100) {    //lines for "football field"
+    for (var i = 0; i < 800; i += 100) {    // vertical lines for "football field"
         line(i, 0, i, 600);
         stroke(255);
     }
@@ -25,11 +25,11 @@ function draw () {
 
     x += speed;                             //increase speed
     if (x > width+radius+40) {              //if poistion of ball exceeds screen width and width +40 for oval shape of ball then reset position
-        x =-radius;
+        x =-radius;                         //reset position to just before canvas
     }
     noStroke();
     ellipse(x, 300, radius+40, radius);     //ball + 40 to elongate into football shape
-    fill(255, 173, 51);                     //light blue
+    fill(255, 173, 51);                     //orange
 
     
 }
