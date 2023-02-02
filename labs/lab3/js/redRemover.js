@@ -23,7 +23,8 @@ function setup() {
 }
 
 function draw() {
-    background(217, 179, 255); 
+    background(200, 70, 110); 
+    noStroke();
     ellipse(mouseX, mouseY, 80, 80);
     fill(255,0,0);
    // removeRed();
