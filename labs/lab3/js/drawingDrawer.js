@@ -24,21 +24,27 @@ function setup() {
 }
 
 function draw() {
-    background(0); 
+    background(217, 179, 255); 
+    gingerbread(mouseX,mouseY);
+    gingerbread(mouseX+150, mouseY+40);
+    gingerbread(mouseX-150, mouseY+40);
+    
+}
 
+function gingerbread(x,y) {
     noStroke();
-    ellipse(mouseX, mouseY, radius, radius);            //gingerbread head
-    rect(mouseX-18, mouseY, bodyWidth , bodyHeight);    //gingerbread body
-    ellipse(mouseX-20, mouseY+70, radius,radius/2);     //left arm
-    ellipse(mouseX+20, mouseY+70, radius,radius/2);     //right arm
-    ellipse(mouseX-20, mouseY+120, radius,radius/2);
-    ellipse(mouseX+20, mouseY+120, radius,radius/2);
+    ellipse(x, y , radius, radius);           //gingerbread head
+    rect(x-18, y, bodyWidth , bodyHeight);    //gingerbread body
+    ellipse(x-20, y+70, radius,radius/2);     //left arm
+    ellipse(x+20, y+70, radius,radius/2);     //right arm
+    ellipse(x-20, y+120, radius,radius/2);
+    ellipse(x+20, y+120, radius,radius/2);
 
     fill(255);                                          
-    ellipse(mouseX+15, mouseY-8, eyer, eyer);           //right eye
-    ellipse(mouseX-15, mouseY-8, eyer, eyer);           //left eye
-    arc(mouseX, mouseY+10, mouthWidth, 20, TWO_PI, PI); //MOUTH
+    ellipse(x+15, y-8, eyer, eyer);           //right eye
+    ellipse(x-15, y-8, eyer, eyer);           //left eye
+    arc(x, y+10, mouthWidth, 20, TWO_PI, PI); //MOUTH
 
     
-    fill(179, 89, 0);                                   //gingerbread brown
+    fill(179, 89, 0);                         //gingerbread brown
 }
