@@ -8,6 +8,7 @@ Class 23523
 //Use for loop to increment the value of red variable, starting at red and fading to not red In a function
 //Create an instance that tests the function with drawing a circle
 
+//can add red to the circle that disappears
 
 let red = 255             
 
@@ -23,7 +24,11 @@ function draw() {
     background(200, 70, 110); 
     noStroke();
     ellipse(mouseX, mouseY, 90, 90);
-    fill(red,0,0);
-   // removeRed();                              //need to add a removeRed function
+   let noRed = removeRed(color(170, 200, 150));  
+   fill(noRed);                             //need to add a removeRed function
 }
 
+function removeRed(c){
+     c.setRed(0);
+     return c;
+}
