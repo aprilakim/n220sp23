@@ -10,7 +10,7 @@ Class 23523
 
 //can add red to the circle that disappears
 
-let red = 255             
+            
 
 
 function setup() {
@@ -19,13 +19,11 @@ function setup() {
 }
 
 function draw() {
-    red = red - 1                               //gradually fades to black
-        if (red <10) red = 255;                 //resets to red
     background(200, 70, 110); 
     noStroke();
-    ellipse(mouseX, mouseY, 90, 90);
-   let noRed = removeRed(color(170, 200, 150));  
-   fill(noRed);                             //need to add a removeRed function
+    ellipse(mouseX, mouseY, 90, 90);            //circle that tracks mouse movement
+   let noRed = removeRed(color(170, 200, 150));  // create a variable that stores the 
+   fill(noRed);                                 //
 }
 
 function removeRed(c){
