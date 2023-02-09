@@ -11,28 +11,33 @@ Class #23523
 /*make a function that take an argument and draws the object accordingly*/
 
 
-let star = {
-    width: 100,
-    height: 100,
-    color: "#ffff66",
-    xPos: 350,
-    yPos: 250,
-};
+/*--Define rasberry object--*/
+
+let raspberry ={
+    radius: 20,
+    color: "#7b1e5e",
+    x: 350,
+    y: 250
+}
 
 function setup() {
     createCanvas(800, 600);
-    background(0);
-    
-
+    background(255, 230, 255);
 }
 
 function draw() {
-    fill(star.color);
+    noStroke();
+    fill(raspberry.color);
+    ellipse(raspberry.x, raspberry.y, raspberry.radius, raspberry.radius);  //top center ellipse
+    ellipse(raspberry.x + raspberry.radius -2, raspberry.y, raspberry.radius, raspberry.radius);
+    ellipse(raspberry.x - raspberry.radius +2, raspberry.y, raspberry.radius, raspberry.radius);
+    ellipse(raspberry.x + raspberry.radius *2-4, raspberry.y, raspberry.radius, raspberry.radius);
+    ellipse(raspberry.x - raspberry.radius *2+4, raspberry.y, raspberry.radius, raspberry.radius);
+
     
-    rect(star.xPos, star.yPos, star.width, star.height);
-        if(mouseIsPressed){
-            fill(star.color = "#4d79ff");
-        }
+    ellipse(raspberry.x, raspberry.y + raspberry.radius - 2, raspberry.radius, raspberry.radius);
+    ellipse(raspberry.x + raspberry.radius -2 , raspberry.y + raspberry.radius - 2, raspberry.radius - 2, raspberry.radius);
+    ellipse(raspberry.x - raspberry.radius +2, raspberry.y + + raspberry.radius - 2, raspberry.radius -2 , raspberry.radius);
 
-
+    ellipse(raspberry.x, raspberry.y + raspberry.radius*2 - 4, raspberry.radius, raspberry.radius);
 }
