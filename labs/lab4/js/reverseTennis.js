@@ -5,65 +5,52 @@ N220 sp23
 Class #23523
 */
 
-/*----Create Tennis Ball constructor------
-function TennisBall(x,y) {
-    
-    
-}
-------*/
+
 
 /*----------Object Tall Rectangle A --include properties (x,y,width,height) ----x pos on left half of screen---*/
 
 let tennisBallA = {
     xPos: 300,
-    yPos: 350,
+    yPos: 100,
     color: "#bfff80",
-    diameter: 50
+    width: 60,
+    height: 500
 }
 
+/*----------Object Tall Rectangle B --include properties (x,y,width,height)-----x pos on right half of screen----*/
 let tennisBallB = {
     xPos: 700,
-    yPos: 350,
+    yPos: 100,
     color: "#ff3333",
-    diameter: 50
+    width: 60,
+    height: 500
 }
 
 function setup () {
     createCanvas(1000, 700);
-    background("#cccccc");
+    
 }
 
 function draw(){
+    background("#cccccc");
     fill(tennisBallA.color);
-    ellipse(tennisBallA.xPos, tennisBallA.yPos, tennisBallA.diameter, tennisBallA.diameter);
+    rect(tennisBallA.xPos, tennisBallA.yPos, tennisBallA.width, tennisBallA.height);
         
     fill(tennisBallB.color);
-    ellipse(tennisBallB.xPos, tennisBallB.yPos, tennisBallB.diameter, tennisBallB.diameter);
+    rect(tennisBallB.xPos, tennisBallB.yPos, tennisBallB.width, tennisBallB.height);
 
-        if(keyIsPressed) {
-            tennisBallA.xPos -= 1;
-            tennisBallB.xPos += 1;
-        }
+        /*------if up key is pressed, Rect A goes up(iterate up the y axis) and Rect B goes down--(down the y axis-----*/
+        
+       if (keyIsDown(UP_ARROW)) {
+            tennisBallA.yPos -= 1;
+            tennisBallB.yPos += 1; 
+       }
+       /*------if down key is pressed, Rect A goes down(iterate down the y axis) and Rect B goes up--( the y axis------*/
+       if (keyIsDown(DOWN_ARROW)) {
+            tennisBallA.yPos += 1;
+            tennisBallB.yPos -= 1; 
+       }
 }
 
-/*----------Object Tall Rectangle B --include properties (x,y,width,height)-----x pos on right half of screen----*/
-/*------if up key is pressed, Rect A goes up(iterate up the y axis) and Rect B goes down--(down the y axis-----------*/
-/*------else if down key is pressed, Rect A goes down(iterate down the y axis) and Rect B goes up--( the y axis-------------*/
-/*-------------------*/
 
-/*---Create tennis ball constructor----
-
-class TennisBall {
-    constructor(type) {
-        this.type = type;    //update the type accordingly
-        this.x = x;
-        this.y = y; 
-        this.width = 50;
-        this.height = 50;
-    }
-}
------------------------------------------*/
-
-
-/*-----Create function that moves the left ball towards the left and the right ball towards the right--*/
 
