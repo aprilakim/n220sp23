@@ -5,10 +5,6 @@ N220 sp23
 Class #23523
 */
 
-/*-Create object with properties width, height, color, and position of ___ --*/
-/*- draw object by refering to width, heigt, etc properties in object*
-/*like a protoype or template?/
-/*make a function that take an argument and draws the object accordingly*/
 
 
 /*--Define rasberry object--*/
@@ -25,19 +21,21 @@ function setup() {
     background(255, 230, 255);
 }
 
+/*----------make a function that take an argument and draws the object accordingly------------*/
+
 function draw() {
     noStroke();
     fill(raspberry.color);
     ellipse(raspberry.x, raspberry.y, raspberry.radius, raspberry.radius);  //top center ellipse
-    ellipse(raspberry.x + raspberry.radius -2, raspberry.y, raspberry.radius, raspberry.radius);
+    ellipse(raspberry.x + raspberry.radius -2, raspberry.y, raspberry.radius, raspberry.radius); //top row
     ellipse(raspberry.x - raspberry.radius +2, raspberry.y, raspberry.radius, raspberry.radius);
     ellipse(raspberry.x + raspberry.radius *2-4, raspberry.y, raspberry.radius, raspberry.radius);
     ellipse(raspberry.x - raspberry.radius *2+4, raspberry.y, raspberry.radius, raspberry.radius);
 
     
-    ellipse(raspberry.x, raspberry.y + raspberry.radius - 2, raspberry.radius, raspberry.radius);
+    ellipse(raspberry.x, raspberry.y + raspberry.radius - 2, raspberry.radius, raspberry.radius); //2nd row
     ellipse(raspberry.x + raspberry.radius -2 , raspberry.y + raspberry.radius - 2, raspberry.radius - 2, raspberry.radius);
     ellipse(raspberry.x - raspberry.radius +2, raspberry.y + + raspberry.radius - 2, raspberry.radius -2 , raspberry.radius);
 
-    ellipse(raspberry.x, raspberry.y + raspberry.radius*2 - 4, raspberry.radius, raspberry.radius);
+    ellipse(raspberry.x, raspberry.y + raspberry.radius*2 - 4, raspberry.radius, raspberry.radius); //last row
 }
