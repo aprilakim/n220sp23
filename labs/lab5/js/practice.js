@@ -1,12 +1,6 @@
-function checkResponse(time) {
-    console.log(time);
-    if (time == morning)
-        console.log("It works");
-}
-/*      
-time = {
-    morning: 0000-1100 ,
-    afternoon: 1101- ,
-    evening:
-}
-*/
+let result = 1;
+for (let counter = 0; counter < 10; counter += 1){
+    result *= 2;
+};
+
+console.log(result);
