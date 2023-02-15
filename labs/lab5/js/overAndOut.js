@@ -8,8 +8,26 @@ Class #23523
 /*--Algorithm:---------------*/
 /*--create a blue square div 100px*100px---------------*/
 /*--if onmouseover turn black---------------*/
+
+let square = document.getElementById("shapeA");
+
+/*--styling in css file, but this works too------
+
+square.style.backgroundColor = "#0000FF";
+square.style.width = "100px";
+square.style.height = "100px";
+
+--------------------------------------------------*/
+
+function changeColor() {
+    square.style.backgroundColor = "#000000"; 
+    
+
+   
+}
+
 /*--if onmouseout turn blue---------------*/
-/*-----------------*/
+
 
 /*-----------------------------------------------------------------------------------------*/
 /*--Prof Instructions: --Write the markup and JavaScript to place a square div on 
