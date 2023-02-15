@@ -18,12 +18,19 @@ square.style.width = "100px";
 square.style.height = "100px";
 
 --------------------------------------------------*/
+
+
 /*--if onmouseover turn black---------------*/
 function changeColor() {
     square.style.backgroundColor = "#000000";    
 }
 
 /*--if onmouseout turn blue!!!!!!!!!!!!!!!!!!!!!!---------------*/
+function changeColorAgain() {
+    square.style.backgroundColor = "#0000FF";
+}
+
+
 
 
 /*-----------------------------------------------------------------------------------------*/
