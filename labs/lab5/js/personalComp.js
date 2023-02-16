@@ -13,14 +13,14 @@ Class #23523
 let newMyName = document.getElementById("myName");
 
 function addName() {
-    /*document.getElementById("myName").innerHTML = ; */
     newMyName.innerHTML = "Daisy";
     newMyName.style.backgroundColor = "#f5e942";
-    newMyName.style.color = "#f2f2ed";
-    newMyName.style.textShadow = "3px 3px 4px #000000";
+    newMyName.style.color = "#000000";
+    newMyName.style.textShadow = "3px 3px 5px #a9e1f5";
     newMyName.style.padding = "20px";
     newMyName.style.borderRadius = "60px"
     newMyName.style.width = "auto";
+    newMyName.style.borderStyle = "dotted";
 
 }
 /*----------------------------------------------------------------------------------*/
