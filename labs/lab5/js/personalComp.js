@@ -17,7 +17,7 @@ function addName() {
     newMyName.innerHTML = "Daisy";
     newMyName.style.backgroundColor = "#f5e942";
     newMyName.style.color = "#f2f2ed";
-    newMyName.style.textShadow = "2px 2px 4px #000000";
+    newMyName.style.textShadow = "3px 3px 4px #000000";
     newMyName.style.padding = "20px";
     newMyName.style.borderRadius = "60px"
     newMyName.style.width = "auto";
