@@ -10,6 +10,19 @@ Class #23523
 /*--when mouse does something, change the color or size, for example------------------*/
 /*--innerhtml append the name AprilApril, for example------------------*/
 
+let newMyName = document.getElementById("myName");
+
+function addName() {
+    /*document.getElementById("myName").innerHTML = ; */
+    newMyName.innerHTML = "Daisy";
+    newMyName.style.backgroundColor = "#f5e942";
+    newMyName.style.color = "#f2f2ed";
+    newMyName.style.textShadow = "2px 2px 4px #000000";
+    newMyName.style.padding = "20px";
+    newMyName.style.borderRadius = "60px"
+    newMyName.style.width = "auto";
+
+}
 /*----------------------------------------------------------------------------------*/
 
 /*--Prof Instructions: --Create a composition that, at minimum:

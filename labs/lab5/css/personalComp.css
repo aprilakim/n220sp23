@@ -3,5 +3,10 @@
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
     color: #2929a3;
-    font-size: 50px;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 3px 3px 7px #ed42d1;
+    background-color: black;
+    padding: 60px;
+    
 }
