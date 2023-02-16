@@ -1,13 +1,6 @@
-:root {
-    --h: 100px;
-    --w: 100px;
-  }
-  
 
 
 
 #shapeB {
-    height: var(--h);
-    width: var(--w);
     background-color: #004d00;
 }
