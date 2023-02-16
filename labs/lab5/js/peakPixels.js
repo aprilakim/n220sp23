@@ -12,17 +12,16 @@ Class #23523
 /*--Link the <div> element with id in HTML document-------*/
 
 
-/*--If mouse is clicked, increase div by 1.1* the original size-------*/
-
 let shape = document.getElementById("shapeB");
 let h = 100;
+let w = 100;
 
-/*--This function is not invoked anywhere---*/
-
+/*--If mouse is clicked, increase div by 1.1* the original size-------*/
+/*--Notes: the square grows width and height ONE time only. How can I 
+(store the variables so that the square can keep increasing in size?)---*/
 function growSquare() {
-    if (mouseClicked){
-        shape.style.backgroundColor = "#000000"; 
-    }
+    shape.style.width = `${h * 1.1}px`;
+    shape.style.height = w * 1.1 + "px";
 }
 
 /*--------------------------------------------------------------------------------------------*/
