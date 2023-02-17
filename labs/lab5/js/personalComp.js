@@ -6,12 +6,12 @@ Class #23523
 */
 
 /*--Algorithm:----------------------------------------------------------------*/
-/*--create a composition, or name, that has css linked to it (class, id, tag)------------------*/
-/*--when mouse does something, change the color or size, for example------------------*/
-/*--innerhtml append the name AprilApril, for example------------------*/
+/*--create a composition that has css linked to it (class, id, tag)-------------*/
+
 
 let newMyName = document.getElementById("myName");
 
+/*--when mouse does something, change the style------------------*/
 function addName() {
     newMyName.innerHTML = "Daisy";
     newMyName.style.backgroundColor = "#f5e942";
