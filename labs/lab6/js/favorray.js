@@ -25,10 +25,10 @@ let myFaves = [ "Thunderstorms", "Coffee", "Plants", "Cool Lighting", "A Cozy Bl
 function displayFaves(){}
     for(let i=0; i<myFaves.length; i++){
         let faveItem = myFaves[i];
-        faves.innerHTML = myFaves[i] + " is one of my favorite things.";
+        faves.innerHTML = myFaves + " are a few of my favorite things.";
+      
     console.log(faveItem);
 }
-
 
 
 
