@@ -8,7 +8,7 @@ Class #23523
 
 let faves = document.getElementById("faves");
 
-let myFaves = [ "Thunderstorms", "Coffee", "Plants", "Cool Lighting", "A Cozy Blanket"]; 
+let myFaves = [ "Thunderstorms", " coffee", " plants", " cool lighting", " cozy blankets"]; 
 
 
 /*---- create a loop that iterates through and -----*/
