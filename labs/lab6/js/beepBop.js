@@ -5,7 +5,6 @@ N220 sp23
 Class #23523
 */
 
-/*--Algorithm: */
 
 let beeps = document.getElementById("beeper");
 
