@@ -5,21 +5,34 @@ N220 sp23
 Class #23523
 */
 
-/*--Algorithm:
+/*--Algorithm: */
 
-Do I need array [0-24]
+let beeps = document.getElementById("beeper");
 
-Create div linked with id="beeper"
- For loop- if i is less than 25 run code
+beeps.style.fontSize += " 20px";
 
-    if i/3 with no modulas
-    output word "beep"
 
-    if i/5 with no modulas
-    ouput word "bop"
-
-    if i/3 && i/5 
-    output "beep" + "bop"
+ //For loop- if i is less than 25 run code
+for (let i = 0; i < 25; i++){
+console.log(i);
+    //if i/3 with no modulas output word "beep"
+    if (i % 3 == 0 ){
+        beeps.innerHTML += i +" beep" + "<br>";
+    }
+    //if i/5 with no modulas ouput word "bop"
+    if (i % 5 ==0){
+        beeps.innerHTML += i + " bop" + "<br>" ;
+    //if i/3 && i/5 output "beep" + "bop"       
+    }
+    if ( i % 3 ==0 && i % 5 ==0){
+        beeps.innerHTML += i +" beepbop" + "<br>";
+    }
+    if (i % 3 !=0 && i % 5 !=0){
+        beeps.innerHTML += (i) + "<br>" ;
+     }
+}
+/*---Question: why does computer think 3/0 and 5/0 are valid expressions? Is this ok?--*/
+/*
 
 Expected results:
 0-24 numbers will be ran.. Numbers divisible by 3: (3, 6, 9, 12, 15, 18, 21, 24)-8 digits
