@@ -21,8 +21,9 @@ newNums.style.height="150px";
 
 /*--when mouse does something, change the style---------*/
 function displayNums() {
-        for(let num = 1000; if num < 5000; +=1000);
-        newNums.innerHTML = 
+        for(i = 1000; i < 5000; ++1000);
+        newNums.innerHTML = num[i];
+        console.log(num);
     }
     
     /*---------*/
