@@ -4,6 +4,7 @@ April Kim
 N220 sp23
 Class #23523
 */
+
 /*-------- Instructor guidelines:---------------
 Generate a random move for the computer (rock/paper/scissors)
 If the play chose guard
@@ -19,6 +20,9 @@ Once the logic is complete,
 show the results of the round: You chose X, computer chose Y. 
 update the score
 -------------------------------------------------*/
+
+let buttons = document.body.getElementsByTagName("div");
+buttons.style.margin = "15px";
 
 /*-------Computer Player-------------------------*/
 // store a random number in variable that will act as computer picking RPS
