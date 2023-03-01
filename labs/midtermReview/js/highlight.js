@@ -26,4 +26,21 @@ display.style.border = "solid";
 display.style.width = "350px";
 display.style.padding = "15px";
 
+//class needed so that ONE function can be applied to ANY of the words that are clicked
+const selected = document.getElementsByClassName("animal");
+
+//class not working for me RN so doing id just to make s happen
+let animalOne = document.getElementById("penguin");
 //
+//Do I need an array to store the animals? 
+
+
+//Function: highlight and bold text,reset other divs 
+function highlightText(){   
+   animalOne.style.backgroundColor = "#74d9ed";
+   animalOne.style.fontWeight = "bold";
+   display.innerHTML = "Penguin";
+
+   selected.style.backgroundColor = "";
+   
+}
