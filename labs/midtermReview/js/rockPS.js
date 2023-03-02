@@ -21,17 +21,32 @@ show the results of the round: You chose X, computer chose Y.
 update the score
 -------------------------------------------------*/
 
-let buttons = document.body.getElementsByTagName("div");
-buttons.style.margin = "15px";
 
 /*-------Computer Player-------------------------*/
 // store a random number in variable that will act as computer picking RPS
-//if number is between 0-2: rock, 3-5: paper, 6-8: scissors, for example
+//if number is between 0-32: rock, 32-65: paper, 65-99: scissors, for example
+let displayDraw = document.getElementById("score");
+let score = [0,0];
+let computerPlayer = Math.floor(Math.random() *100);
+console.log(displayDraw);
+//displayDraw.innerHTML = computerPlayer;
+if (computerPlayer < 32){
+    displayDraw.innerHTML = "Rock";
+}
+else if (computerPlayer > 32 && computerPlayer < 65){
+    displayDraw.innerHTML = "Paper";
+}
+else {
+    displayDraw.innerHTML = "Scissors";
+}
 
+//Rules: Scissors beats paper, paper beats rock, rock beats scissors
 
 /*--------Human Player--------------------------*/
 // If player chooses guard button, deduct half a point from their score
-
+let humanPlayerChoices = [document.getElementById("guardB"), document.getElementById("rockB"), document.getElementById("paperB"), document.getElementById("scissorsB")];
+function guardB(){
+    
 // use if statements???? to compare the computer and human choices to determine
 //which player gets the point added to their score, and which player
 //gets a point deducted
