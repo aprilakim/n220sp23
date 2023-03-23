@@ -14,8 +14,8 @@ let txtBill = document.getElementById("txtBill");
 let dvOutput = document.getElementById("dvOutput");
 
 function calculateTip(){
-    let bill = Number(txtBill.value);
-    dvOutput.innerHTML = "Tip:$ " + (txtBill.value * .2 )+ " Total:$ " + ();
+   // let tip = Number(txtBill.value);
+    dvOutput.innerHTML = "Tip:$ " + (txtBill.value * .2 )+ " Total:$ " + (Number(txtBill.value * .2) + Number(txtBill.value));
     
 }
 /*--calculate tip by multiplying user input by 20%--*/
