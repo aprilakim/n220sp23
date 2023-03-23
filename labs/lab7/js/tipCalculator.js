@@ -10,6 +10,14 @@ Class #23523
 /*--Assuming input element and button element are created in HTML file:--*/
 /*--Create function getBillAmount--*/
 /*--save user input in  variable that ensures input is numerical--*/
+let txtBill = document.getElementById("txtBill");
+let dvOutput = document.getElementById("dvOutput");
+
+function calculateTip(){
+    let bill = Number(txtBill.value);
+    dvOutput.innerHTML = "Tip:$ " + (txtBill.value * .2 )+ " Total:$ " + ();
+    
+}
 /*--calculate tip by multiplying user input by 20%--*/
 /*--add tip amount to user input--*/
 /*--Output tip to screen using innnerHTML--*/
