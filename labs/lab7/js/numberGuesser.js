@@ -21,17 +21,17 @@ let dvOutput = document.getElementById("dvOutput");
 /*--create function that compares user input to hard coded number--*/
 function compareGuess(){
     /*---if user number is greater than set number, output says too high-*/
-    if txtGuess.value > answer {
+    if Number(txtGuess.value) > answer {
         dvOutput.innerHTML = "Too high!";
     }
 
     /*---if user number is less than set number, output says too low-*/
-    if txtGuess.value < answer {
+    if Number(txtGuess.value) < answer {
         dvOutput.innerHTML = "Too low!";
     }
-    
+
     /*--if user guesses correct number, say correct! the number is __ --*/
-    if txtGuess.value = answer {
+    if Number(txtGuess.value) = answer {
         dvOutput.innerHTML = "You are correct! The answer is" + answer +"!"
     }
     else {
