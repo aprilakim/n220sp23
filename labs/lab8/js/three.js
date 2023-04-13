@@ -13,5 +13,9 @@ the hashtags/octothorpes.
 Write a web page to test the function - one button and input, and one 
 div. When the button is pressed, take the input, use the function to 
 remove the hashtags, and show the result string on the page.-----------*/
+let txtInput = document.getElementById("txtInput");
+let dvOutput = document.getElementById("dvOutput");
 
-//function 
+function cleanUp(){
+
+}
