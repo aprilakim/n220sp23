@@ -13,10 +13,13 @@ let txtNumber = document.getElementById("txtNumber");
 let dvOutput = document.getElementById("dvOutput");
 
 function getInput(){
+    
     //??this is not letting me know when input is a string vs number
     if (Number.isNaN(txtNumber.value == false)){
         dvOutput.innerHTML = "Not a number, try again";
     }
+    
+   //let input = Number(txtNumber.value);
     else divideNumber();
 }
 
